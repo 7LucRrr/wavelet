@@ -8,7 +8,9 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
+            // I made the change to say Lucas's mighty number here on git hub, but couldn't get the change to commit from VC code
             return String.format("Lucas's mighty number: %d", num);
+            
         } else if (url.getPath().equals("/increment")) {
             num += 1;
             return String.format("Number incremented!");
